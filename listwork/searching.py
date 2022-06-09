@@ -5,7 +5,8 @@ for num in arr:
     if num==element:
         flag=1
         break
-if flag==1:
-    print("element found")
-else:
-    print("not found")
+# if flag==1:
+#     print("element found")
+# else:
+#     print("not found")
+print("element found" if flag!=0 else "not found")
