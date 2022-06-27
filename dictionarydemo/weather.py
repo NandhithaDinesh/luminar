@@ -21,14 +21,24 @@ weather=[
     {"district": "mpm", "temp": 29},
 
 ]
-out={"tvm":31,"ktm":29,}
-
+# out={"tvm":31,"ktm":29,}
+out={}
+for data in weather:
+    dist_name=data["district"]
+    cur_temp=data["temp"]
+    if dist_name in out:
+        old_temp=out[dist_name]
+        if cur_temp>old_temp:
+            out[dist_name]=cur_temp
+    else:
+        out[dist_name]=cur_temp
+print(out)
 # sort out based on temparature
-print(sorted(weather,key=lambda res:res["temp"],reverse=True))
+print(sorted(out.items(),key=lambda res:res[1],reverse=True))
 
 # find max tem district
-print(max(weather,key=lambda res:res["temp"]))
+print(max(out.items(),key=lambda res:res[1]))
 
 # find min tem district
-print(min(weather,key=lambda res:res["temp"]))
+print(min(out.items(),key=lambda res:res[1]))
 
