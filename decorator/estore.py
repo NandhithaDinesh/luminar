@@ -7,7 +7,7 @@ class AddProduct:
         u_ser=kwargs.get("user")
         if u_ser.role=="admin":
             self.product_name=kwargs.get("p_name")
-            self.user=kwargs.get("user")
+            self.role=kwargs.get("role")
         else:
             print("no privillage")
 user=User(name="nandhu",role="customer")

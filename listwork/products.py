@@ -58,8 +58,8 @@ mobiles=[
 # print(f"mobiles having stock greater than 10 are: {stock}")
 #
 # # q9 count of mobiles having dispaly amoled
-# count=[mobile for mobile in mobiles if mobile[3]=="AMOLED"]
-# print(f"count of mobiles having dispay amoled are: {count}")
+count=[mobile for mobile in mobiles if mobile[3]=="AMOLED"]
+print(f"count of mobiles having dispay amoled are: {count}")
 #
 # # q10 sort mobiles based on price oredr by desc
 # price=[mobile[4] for mobile in mobiles ]
