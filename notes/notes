@@ -1,0 +1,30 @@
+# there are two types of protocols they are stateless and stateful protocols
+# http and https protocols are stateless protocols
+# status code
+# there are 4 type of series
+# 1xx : informational
+# 2xx : success
+# 3xx : redirectional
+# 4xx : client error
+# 5xx : server error
+
+API(application programming interface)
+that enables communication between two different application
+
+CRUD
+create
+update
+list/detail
+delete
+
+httpmethods(post,put/patch,delete,get)
+create==post
+update==put/patch
+list/detail==delete
+delete==get
+
+django follows mvt architecture
+
+m-model(closely related with database)
+v-view(functionalities and business logic)
+t-templates(html,css)

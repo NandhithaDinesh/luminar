@@ -21,13 +21,13 @@
 #         print(i)
 #     i+=1
 #........factoria of 5...........
-# i=1
-# num=5
-# fact=1
-# while(i<=num):
-#     fact=fact*i;
-#     i=i+1
-# print("factorial=",fact)
+i=1
+num=5
+fact=1
+while(i<=num):
+    fact=fact*i;
+    i=i+1
+print("factorial=",fact)
 #........print sum of 1 to 10......
 # i=0
 # sum=0
